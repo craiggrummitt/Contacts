@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		187B696A1A423E9D00475FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B69691A423E9D00475FBB /* AppDelegate.swift */; };
-		187B696C1A423E9D00475FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B696B1A423E9D00475FBB /* ViewController.swift */; };
 		187B696F1A423E9D00475FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B696D1A423E9D00475FBB /* Main.storyboard */; };
 		187B69711A423E9D00475FBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187B69701A423E9D00475FBB /* Images.xcassets */; };
 		187B69741A423E9D00475FBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187B69721A423E9D00475FBB /* LaunchScreen.xib */; };
 		187B69801A423E9D00475FBB /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B697F1A423E9D00475FBB /* ContactsTests.swift */; };
+		187B698C1A42443200475FBB /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B698B1A42443200475FBB /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,14 @@
 		187B69641A423E9D00475FBB /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187B69681A423E9D00475FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187B69691A423E9D00475FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		187B696B1A423E9D00475FBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		187B696E1A423E9D00475FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187B69701A423E9D00475FBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		187B69731A423E9D00475FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		187B69791A423E9D00475FBB /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187B697E1A423E9D00475FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187B697F1A423E9D00475FBB /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
+		187B69891A423F2B00475FBB /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		187B698B1A42443200475FBB /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		187B695B1A423E9D00475FBB = {
 			isa = PBXGroup;
 			children = (
+				187B69891A423F2B00475FBB /* readme.md */,
 				187B69661A423E9D00475FBB /* Contacts */,
 				187B697C1A423E9D00475FBB /* ContactsTests */,
 				187B69651A423E9D00475FBB /* Products */,
@@ -78,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				187B69691A423E9D00475FBB /* AppDelegate.swift */,
-				187B696B1A423E9D00475FBB /* ViewController.swift */,
+				187B698B1A42443200475FBB /* Contacts.swift */,
 				187B696D1A423E9D00475FBB /* Main.storyboard */,
 				187B69701A423E9D00475FBB /* Images.xcassets */,
 				187B69721A423E9D00475FBB /* LaunchScreen.xib */,
@@ -212,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187B696C1A423E9D00475FBB /* ViewController.swift in Sources */,
+				187B698C1A42443200475FBB /* Contacts.swift in Sources */,
 				187B696A1A423E9D00475FBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

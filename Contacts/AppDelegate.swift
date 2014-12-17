@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Contacts
 //
-//  Created by Craig on 17/12/2014.
+//  Created by Thinkful on 17/12/2014.
 //  Copyright (c) 2014 Thinkful. All rights reserved.
 //
 
