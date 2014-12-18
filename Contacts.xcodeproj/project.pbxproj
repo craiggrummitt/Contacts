@@ -14,6 +14,7 @@
 		187B69801A423E9D00475FBB /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B697F1A423E9D00475FBB /* ContactsTests.swift */; };
 		187B698C1A42443200475FBB /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B698B1A42443200475FBB /* Contacts.swift */; };
 		187B698E1A424E8F00475FBB /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B698D1A424E8F00475FBB /* ContactDetails.swift */; };
+		187B69921A42544500475FBB /* ContactInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B69911A42544500475FBB /* ContactInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		187B69891A423F2B00475FBB /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		187B698B1A42443200475FBB /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		187B698D1A424E8F00475FBB /* ContactDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		187B69911A42544500475FBB /* ContactInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				187B69691A423E9D00475FBB /* AppDelegate.swift */,
 				187B698B1A42443200475FBB /* Contacts.swift */,
 				187B698D1A424E8F00475FBB /* ContactDetails.swift */,
+				187B69911A42544500475FBB /* ContactInput.swift */,
 				187B696D1A423E9D00475FBB /* Main.storyboard */,
 				187B69701A423E9D00475FBB /* Images.xcassets */,
 				187B69721A423E9D00475FBB /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187B698C1A42443200475FBB /* Contacts.swift in Sources */,
+				187B69921A42544500475FBB /* ContactInput.swift in Sources */,
 				187B698E1A424E8F00475FBB /* ContactDetails.swift in Sources */,
 				187B696A1A423E9D00475FBB /* AppDelegate.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Contacts: UITableViewController {
+class Contacts: UITableViewController, ContactInputDelegate {
     
     struct ContactInfo {
         var name: String
@@ -44,6 +44,15 @@ class Contacts: UITableViewController {
         return cell
     }
     
+    // MARK: - ContactInputDelegate protocol
+    func didUpdateContact(senderClass: AnyObject, aName: String, aPhoneNumber: String) {
+        
+        var newContact = ContactInfo(name: aName, phoneNumber: aPhoneNumber)
+        listOfContacts.append(newContact)
+        
+        tableView.reloadData()
+    }
+    
     // MARK: - Navigation
     
     //Passing details to detail View Controller
@@ -56,6 +65,9 @@ class Contacts: UITableViewController {
             
             theDestination.contactName = theSelectedRow.name
             theDestination.contactPhone = theSelectedRow.phoneNumber
+        } else if segue.identifier == "ToInput" {
+            (segue.destinationViewController as ContactInput).delegate = self
+            
         }
     }
 }
