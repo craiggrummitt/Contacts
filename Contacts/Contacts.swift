@@ -23,7 +23,10 @@ class Contacts: UITableViewController, ContactInputDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        
         listOfContacts.append(firstContact)
         listOfContacts.append(secondContact)
     }
@@ -42,6 +45,20 @@ class Contacts: UITableViewController, ContactInputDelegate {
         cell.textLabel!.text = listOfContacts[indexPath.row].name
         cell.detailTextLabel!.text = listOfContacts[indexPath.row].phoneNumber
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == .Delete {
+            listOfContacts.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let fromContact = listOfContacts[sourceIndexPath.row]
+        listOfContacts.removeAtIndex(sourceIndexPath.row)
+        listOfContacts.insert(fromContact, atIndex: destinationIndexPath.row)
     }
     
     // MARK: - ContactInputDelegate protocol
