@@ -9,4 +9,4 @@ This Project is set up to demonstrate steps in the process of building a Contact
 
 # Notes
 
-This project is part of Thinkful's course [Intro to iOS Programming in Swift](http://thinkful.com)
+This project is part of Thinkful's course [Build your own iOS Apps](https://www.thinkful.com/courses/learn-swift-programming-online).
